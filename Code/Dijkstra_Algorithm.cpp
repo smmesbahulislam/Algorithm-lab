@@ -11,7 +11,6 @@ void dijkstra(int source,int n){
     vector<int> vis(N,0);
     vector<int> dist(N,INF);
     
-
     set<pair<int,int> > st;
 
     st.insert({0,source});
@@ -22,12 +21,14 @@ void dijkstra(int source,int n){
         int v = node.second;
         int v_dist = node.first;
         st.erase(st.begin());
+
         if(vis[v] == 1) continue;
 
         vis[v] = 1;
         for(auto child: g[v]){
             int child_v = child.first;
             int wt = child.second;
+
             if(dist[v] + wt < dist[child_v]){
                 st.erase({dist[child_v],child_v});
                 dist[child_v] = dist[v] + wt;
