@@ -54,7 +54,7 @@ int main(){
         int x,y,wt;
         cin >> x >> y >> wt;
         g[x].push_back({y,wt});
-        g[y].push_back({x,wt});
+       // g[y].push_back({x,wt});
     }
 
     int source;
