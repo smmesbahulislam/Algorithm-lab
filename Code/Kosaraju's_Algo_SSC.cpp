@@ -71,15 +71,13 @@ void graph::printSSC(){
     }
 
     for(int i = 0;i < V;i++)
-    {
         if(visitedV[i] == false)
             fillOrder(i,visitedV,Stack);
-    }
+
     graph gr = transpose();
     for(int i = 0;i < V;i++)
-    {
         visitedV[i] = false;
-    }
+    
     while(!Stack.empty()){
         int s = Stack.top();
         Stack.pop();
