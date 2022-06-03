@@ -98,7 +98,7 @@ int getSource()
 
 void findEularPath()
 {
-    int src = getSource();
+    int src = 1;
 
     if(src==-1)
         cout<<"no eular path"<<endl;
