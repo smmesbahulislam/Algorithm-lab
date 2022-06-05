@@ -53,3 +53,18 @@ int main()
         }
     }
 }
+
+/*
+Sample Input :
+8 4
+1 2
+2 3
+5 4
+6 5
+
+Sample output:
+4 = 1
+3 = 0
+2 = 1
+1 = 0
+*/
